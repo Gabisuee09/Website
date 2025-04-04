@@ -4,19 +4,43 @@
 
 <head>
 <meta charset="utf-8">
-<title>my index page</title>
+<title>float demo</title>
 <style>
-    body {
-        background: #cc7382;
-        color: white;
+   .right {
+        float:right;
+        margin-left:20px;
+        margin-bottom:20px;
     }
-    
+    .right::after{
+        content:"";
+        clear:both;
+        display:table;
+    }
+    .left{
+        float:left;
+        margin-right:20px;
+        margin-bottom:20px;
+    }
+    .left::after{
+        content:"";
+        clear:both;
+        display:table;
+    }
 </style>
 </head>
             
 <body>
-    <h1>gsrbbbdbdb</h1>
+    <img class="right" src="pineapple.jpg" alt="spongebob's house"/>
+    <h2>This is floating stuff here</h2>
+<p>insert floating text and stuff</p>
 <p>hello world.</p>
+<p>hello world.</p>
+<p>hello world.</p>
+
+<img class="left" src="pineapple.jpg"alt="spongebob's house"/
+>
+<h2>This is floating stuff here</h2>
+<p>insert floating text and stuff</p>
 <p>hello world.</p>
 <p>hello world.</p>
 <p>hello world.</p>
