@@ -11,10 +11,11 @@
   <style>
 body {  
   background:pink;
+  max-width:1000px;
   display: grid;
   grid-template-columns: 3fr 7fr;
   grid-template-rows: 300px 1fr 300px;
-  gap: 0px 0px;
+  gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas:
     "header header"
@@ -22,7 +23,8 @@ body {
     "footer footer";
 }
 
-header { grid-area: header; }
+header { grid-area: header; 
+display:flex;}
 
 nav { grid-area: nav; }
 
@@ -38,10 +40,17 @@ nav ul {
 nav a {
   display: block;
   text-decoration: none;
-  background:pink;
-  width: 200px;
-  height:100px;
-  border: 2px solid
+  background:rgb(228, 161, 172);
+  width: 150px;
+  height:50px;
+  margin-bottom: 10px;
+  border: 2px solid;
+text-align: center;
+  align-content: center;
+}
+
+nav a:hover {
+  background: rgb(31, 93, 155);
 }
 
 footer ul {
@@ -69,8 +78,8 @@ footer ul {
 
 <body>
   <header>
-    <h1>header info here</h1>
-    <img src="#" alt="seahorses serenity" />
+    <h1>Seahorse Information</h1>
+    <img src="seahorse.png2.png" alt="seahorses serenity" />
   </header>
 
   <nav>
